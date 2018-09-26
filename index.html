@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Parallax Website Demo</title>
+
+  <!-- my style sheet -->
+  <link rel="stylesheet" href="css/style.css"></link>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript">
+
+// <!-- if the sub menu is clicked then get the tap class from css-->
+  $(document).ready(function(e){
+    $('.sub-menu').click(function(){
+      $(this).toggleClass('tap');
+    });
+  });
+  </script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+</head>
+
+
+
+
+
+
+
+  <nav class="navbar">
+
+    <span class="open-slide hidden">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+          <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+          <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+
+    </span>
+
+  <div="img">
+  <a class="navbar-brand" href="/"><img src="../img/logo.jpg" alt="Your Logo"></a>
+  </div>
+
+
+<!-- hidden class to hide buttons in mobile screen width -->
+
+      <button type="button" class="btn  hidden grow"><a href="#">Home</a></button>
+        <button type="button" class="btn  hidden grow"><a href="#">About</a></button>
+          <button type="button" class="btn  hidden grow"><a href="#">Contact</a></button>
+
+
+
+          <div class="dropdown hidden">
+            <button type="button" class=" dropbtn btn btn-default hidden grow">menu</button>
+            <div class="dropdown-content">
+              <li><a href="#">Cheesecakes</a></li>
+              <li><a href="#">Ice Creams</a></li>
+              <li><a href="#">Donuts</a></li>
+                <li><a href="#">Biscuits</a></li>
+                <li><a href="#">Milkshakes</a></li>
+                  <li><a href="#">hot Drinks</a><li>
+                    <li><a href="#">mocktails</a></li>
+            </div>
+          </div>
+
+          <button type="button" class="btn hidden grow"><a href="#">Services</a></button>
+
+
+            <!-- <button type="button" class="btn btn-default">Services</button> -->
+
+
+
+       <!-- <li><a href="#">Home</a></li>
+       <li><a  href="#">About</a></li>
+       <li><a href="#">Services</a></li>
+       <li><a href="#">Contact</a></li>!-->
+     <!-- </ul> -->
+   </nav>
+
+
+<body id="main">
+
+
+
+
+
+  <!-- side nav & times gives the x mark to close the side nav -->
+  <div id="side-menu" class="side-nav">
+    <li class="sub-menu"><a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Menu<span class="sub-arrow"></span></a>
+    <ul>
+      <li><a href="#">item 1</a></li>
+      <li><a href="#">item 2</a></li>
+      <li><a href="#">item 3</a></li>
+      <li><a href="#">item 4</a></li>
+      <li><a href="#">item 5</a></li>
+      <li><a href="#">item 6</a></li>
+      <li><a href="#">item 7</a></li>
+    </ul>
+    <a href="#">Contact</a></li>
+  </div>
+
+
+  <script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width ='250px';
+        document.getElementById('main').style.marginLeft ='250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width ='0px';
+        document.getElementById('main').style.marginLeft ='0px';
+    }
+  </script>
+
+
+
+
+
+<!-- <div id="main"> -->
+  <div class="pimg1">
+    <div class="ptext">
+        <span class="border">
+          Parallax Website
+
+        </span>
+     </div>
+   </div>
+
+
+
+
+      <section class="section section-light">
+        <h2>Section One</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas obcaecati blanditiis provident veniam similique asperiores, praesentium adipisci ratione maiores nemo cum nobis culpa qui enim laboriosam. Nemo quia voluptas, sint minima praesentium quae mollitia explicabo in natus, hic atque veniam ad reiciendis recusandae omnis. Deserunt nihil consectetur animi sint numquam, fugiat aperiam accusamus commodi quod architecto quos nostrum totam reiciendis deleniti repellat officiis, odit beatae maxime iure. Vel quo quidem dolor ratione adipisci praesentium maiores, repellat culpa iure esse eaque quibusdam reprehenderit placeat est quasi facilis fugit nisi vero distinctio! Aspernatur numquam nobis accusamus suscipit eveniet, possimus eligendi animi, maxime.
+
+        </p>
+
+      </section>
+
+
+      <div class="pimg2">
+        <div class="ptext">
+          <span class="border trans">
+            cheese cakes
+          </span>
+
+        </div>
+      </div>
+
+
+          <section class="section section-dark">
+            <h2>Section Two</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas obcaecati blanditiis provident veniam similique asperiores, praesentium adipisci ratione maiores nemo cum nobis culpa qui enim laboriosam. Nemo quia voluptas, sint minima praesentium quae mollitia explicabo in natus, hic atque veniam ad reiciendis recusandae omnis. Deserunt nihil consectetur animi sint numquam, fugiat aperiam accusamus commodi quod architecto quos nostrum totam reiciendis deleniti repellat officiis, odit beatae maxime iure. Vel quo quidem dolor ratione adipisci praesentium maiores, repellat culpa iure esse eaque quibusdam reprehenderit placeat est quasi facilis fugit nisi vero distinctio! Aspernatur numquam nobis accusamus suscipit eveniet, possimus eligendi animi, maxime.
+            </p>
+          </section>
+
+          <div class="pimg3">
+            <div class="ptext">
+              <span class="border trans">
+                Ice creams
+
+              </span>
+            </div>
+          </div>
+
+              <section class="section section-light">
+                <h2>Section Three</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas obcaecati blanditiis provident veniam similique asperiores, praesentium adipisci ratione maiores nemo cum nobis culpa qui enim laboriosam. Nemo quia voluptas, sint minima praesentium quae mollitia explicabo in natus, hic atque veniam ad reiciendis recusandae omnis. Deserunt nihil consectetur animi sint numquam, fugiat aperiam accusamus commodi quod architecto quos nostrum totam reiciendis deleniti repellat officiis, odit beatae maxime iure. Vel quo quidem dolor ratione adipisci praesentium maiores, repellat culpa iure esse eaque quibusdam reprehenderit placeat est quasi facilis fugit nisi vero distinctio! Aspernatur numquam nobis accusamus suscipit eveniet, possimus eligendi animi, maxime.
+                </p>
+              </section>
+
+
+              <div class="pimg4">
+                <div class="ptext">
+                  <span class="border trans">
+                    donuts
+
+                  </span>
+                </div>
+              </div>
+
+                  <section class="section section-dark">
+                    <h2>Section Four</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas obcaecati blanditiis provident veniam similique asperiores, praesentium adipisci ratione maiores nemo cum nobis culpa qui enim laboriosam. Nemo quia voluptas, sint minima praesentium quae mollitia explicabo in natus, hic atque veniam ad reiciendis recusandae omnis. Deserunt nihil consectetur animi sint numquam, fugiat aperiam accusamus commodi quod architecto quos nostrum totam reiciendis deleniti repellat officiis, odit beatae maxime iure. Vel quo quidem dolor ratione adipisci praesentium maiores, repellat culpa iure esse eaque quibusdam reprehenderit placeat est quasi facilis fugit nisi vero distinctio! Aspernatur numquam nobis accusamus suscipit eveniet, possimus eligendi animi, maxime.
+                    </p>
+                  </section>
+
+
+                  <div class="pimg5">
+                    <div class="ptext">
+                      <span class="border trans">
+                        milkshakes
+
+                      </span>
+                    </div>
+                  </div>
+
+                      <section class="section section-light">
+                        <h2>Section five</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas obcaecati blanditiis provident veniam similique asperiores, praesentium adipisci ratione maiores nemo cum nobis culpa qui enim laboriosam. Nemo quia voluptas, sint minima praesentium quae mollitia explicabo in natus, hic atque veniam ad reiciendis recusandae omnis. Deserunt nihil consectetur animi sint numquam, fugiat aperiam accusamus commodi quod architecto quos nostrum totam reiciendis deleniti repellat officiis, odit beatae maxime iure. Vel quo quidem dolor ratione adipisci praesentium maiores, repellat culpa iure esse eaque quibusdam reprehenderit placeat est quasi facilis fugit nisi vero distinctio! Aspernatur numquam nobis accusamus suscipit eveniet, possimus eligendi animi, maxime.
+                        </p>
+                      </section>
+
+
+                      <div class="pimg6">
+                        <div class="ptext">
+                          <span class="border trans">
+                            Hot Drinks
+
+                          </span>
+                        </div>
+                      </div>
+
+                          <section class="section section-dark">
+                            <h2>Section six</h2>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas obcaecati blanditiis provident veniam similique asperiores, praesentium adipisci ratione maiores nemo cum nobis culpa qui enim laboriosam. Nemo quia voluptas, sint minima praesentium quae mollitia explicabo in natus, hic atque veniam ad reiciendis recusandae omnis. Deserunt nihil consectetur animi sint numquam, fugiat aperiam accusamus commodi quod architecto quos nostrum totam reiciendis deleniti repellat officiis, odit beatae maxime iure. Vel quo quidem dolor ratione adipisci praesentium maiores, repellat culpa iure esse eaque quibusdam reprehenderit placeat est quasi facilis fugit nisi vero distinctio! Aspernatur numquam nobis accusamus suscipit eveniet, possimus eligendi animi, maxime.
+                            </p>
+                          </section>
+
+
+
+        <!-- Footer -->
+        <!--footer starts from here-->
+         <footer class="footer">
+         <div class="container bottom_border">
+         <div class="row">
+         <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+         <h5 class="headin5_amrc col_white_amrc pt2">Address</h5>
+         <!--headin5_amrc-->
+         <p class="mb10">Miles Street Breakers</p>
+         <p><i class="fa fa-location-arrow"></i>Oldham, OL1 4PJ</p>
+         <p><i class="fa fa-phone"></i> 0161 628 0036 | 0161 637 2559  </p>
+         <p><i class="fa fa fa-envelope"></i> milesstreetbreakers@hotmail.co.uk </p>
+
+
+         </div>
+
+
+         <div class=" col-sm-4 col-md  col-6 col">
+         <h5 class="headin5_amrc col_white_amrc pt2">Our services</h5>
+         <!--headin5_amrc-->
+         <ul class="footer_ul_amrc">
+         <li><a href="#">lorem ipsum text</a></li>
+         <li><a href="#">lorem ipsum</a></li>
+         <li><a href="#">lorem ipsum</a></li>
+         <li><a href="#">lorem ipsum</a></li>
+         <li><a href="#">lorem ipsum</a></li>
+         <li><a href="#">lorem ipsum</a></li>
+         </ul>
+         <!--footer_ul_amrc ends here-->
+         </div>
+
+
+         <div class=" col-sm-4 col-md  col-6 col">
+         <h5 class="headin5_amrc col_white_amrc pt2">Opening Hours</h5>
+         <!--headin5_amrc-->
+         <ul class="footer_ul_amrc">
+         <li><a href="#">Mon - Fri: 09:00am to 5:30pm</a></li>
+         <li><a href="#">Sat -   09:00am to 5:00pm</a></li>
+
+         </ul>
+         <!--footer_ul_amrc ends here-->
+         </div>
+
+
+         <div class=" col-sm-4 col-md  col-12 col">
+         <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+         <!--headin5_amrc ends here-->
+
+         <ul class="footer_ul2_amrc">
+         <li><div class="fb-like"> <a href="#"><img class="img-fluid" src="img/portfolio/thumbnails/fb-logo.png" alt=""></a></div></li>
+         </ul>
+         <!--footer_ul2_amrc ends here-->
+         </div>
+         </div>
+         </div>
+
+
+         <div class="container">
+         <ul class="foote_bottom_ul_amrc">
+         <li><a href="#">Home</a></li>
+         <li><a class="js-scroll-trigger" href="#about">About</a></li>
+         <li><a class="js-scroll-trigger" href="#services">Services</a></li>
+         <li><a class="js-scroll-trigger" href="#contact">Contact</a></li>
+         </ul>
+         <!--foote_bottom_ul_amrc ends here-->
+         <p class="text-center">Copyright @2018 | Designed by <a href="#">Asif Adam</a></p>
+
+         <!-- <ul class="social_footer_ul">
+         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+         <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+         </ul> -->
+         <!--social_footer_ul ends here-->
+         </div>
+
+         </footer>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
